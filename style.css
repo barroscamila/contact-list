@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quattrocento Sans", sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    background-color: #ecebe9;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    min-height: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.tittleHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding-left: 20px;
+}
+
+.tittle {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #383838;
+}
+
+.navHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+    gap: 15px;
+}
+
+.navBtn {
+    font-size: 1.1em;
+    font-weight: 400;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 10px;
+    transition: border-bottom 1s;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.navBtn a {
+    text-decoration: none;
+    color: #383838;
+}
+
+.navBtn:hover {
+    border-color: #383838;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+}
+
+
+.main-content {
+    flex: 1 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "basicInfo" 
+    "socialmediaInfo";
+}
+
+.basicInfo {
+    grid-area: basicInfo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    min-width: 550px;
+}
+
+.name {
+    display: flex;
+    gap: 20px;
+}
+
+.fullname {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    gap: 8px;
+}
+
+.nickname {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    gap: 8px;
+}
+
+.birthday {
+    display: flex;
+    flex-direction: column;
+    width: 110px;
+    gap: 8px;
+}
+
+.numberEmail {
+    display: flex;
+    gap: 20px;
+}
+
+.number {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    gap: 8px;
+}
+
+.number2 {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    gap: 8px;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    gap: 8px;
+}
+
+.addressInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.addressLine1 {
+    display: flex;
+    gap: 8px;
+}
+
+.postcode {
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    gap: 8px;  
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 8px;  
+}
+
+.numberAddress {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    gap: 8px;
+}
+
+.addressLine2 {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.city {
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    gap: 8px;
+}
+
+.state {
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    gap: 8px;
+}
+
+.country {
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    gap: 8px;
+}
+
+
+.socialmediaInfo {
+    grid-area: socialmediaInfo;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer {
+    min-height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #383838;
+    padding: 20px;
+}
+
+.heartImg {
+    width: 18px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #383838;
+    font-weight: 700;
+}

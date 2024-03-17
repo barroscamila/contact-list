@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact List</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div class="container">
+        <header class="header">
+            <div class="tittleHeader">
+                <img src="img/logo.png" alt="logo-contact-list" class="logoImg">
+                <p class="tittle">Contact List</p>
+            </div>
+            <div class="navHeader">
+                <button class="navBtn"><a href="index.html">New Contact</a></button>
+                <button class="navBtn"><a href="contacts.html">Contacts</a></button>
+            </div>
+        </header>
+
+        <section class="main-content">
+            <div class="basicInfo">
+                <div class="name">
+                    <div class="fullname">
+                        <label for="fullname">Full name</label>
+                        <input type="text" name="fullname" id="fullname">
+                    </div>
+                    <div class="nickname">
+                        <label for="nickname">Nickname</label>
+                        <input type="text" name="nickname" id="nickname">
+                    </div>
+                    <div class="birthday">
+                        <label for="birthday">Birthday</label>
+                        <input type="date" name="birthday" id="birthday">
+                    </div>
+                </div>
+
+                <div class="numberEmail">
+                    <div class="number">
+                        <label for="number">Phone number 1</label>
+                        <input type="tel" name="number" id="number" placeholder="(xx) xxxxx-xxxx">
+                    </div>
+                    <div class="number">
+                        <label for="number">Phone number 2</label>
+                        <input type="tel" name="number2" id="number2" placeholder="(xx) xxxxx-xxxx">
+                    </div>
+                    <div class="email">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                </div>
+
+                <div class="addressInfo">
+                    <div class="addressLine1">
+                        <div class="postcode">
+                            <label for="postcode">Postcode</label>
+                            <input type="text" name="postcode" id="postcode" placeholder="xxxxx-xxx">
+                        </div>
+                        <div class="address">
+                            <label for="address">Address</label>
+                            <input type="text" name="address" id="address">
+                        </div>
+                        <div class="numberAddress">
+                            <label for="numberAddress">Number</label>
+                            <input type="number" name="numberAddress" id="numberAddress">
+                        </div>
+                    </div>
+                    <div class="addressLine2">
+                        <div class="city">
+                            <label for="city">City</label>
+                            <input type="text" name="city" id="city">
+                        </div>
+                        <div class="state">
+                            <label for="state">State</label>
+                            <input type="text" name="state" id="state">
+                        </div>
+                        <div class="country">
+                            <label for="country">Country</label>
+                            <input type="text" name="country" id="country">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="socialmediaInfo">
+                <label for="instagram">Instagram</label>
+                <input type="text" name="instagram" id="instagram">
+                <label for="twitter">Twitter</label>
+                <input type="text" name="twitter" id="twitter">
+                <label for="linkedin">Linkedin</label>
+                <input type="text" name="linkedin" id="linkedin">
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Feito com  <span> <img src="img/heart.png" alt="heart" class="heartImg"></span>  por <a href="https://github.com/barroscamila" target="_blank">Camila Barros</a></p>
+        </footer>
+      </div>
+</body>
+</html>
