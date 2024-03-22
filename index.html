@@ -6,6 +6,9 @@
     <title>Contact List</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/twitter.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/8a00166ec8.js" crossorigin="anonymous"></script>
 </head>
 <body>
       <div class="container">
@@ -21,7 +24,7 @@
         </header>
 
         <section class="main-content">
-            <div class="basicInfo">
+            <div class="first-grid">
                 <div class="name">
                     <div class="fullname">
                         <label for="fullname">Full name</label>
@@ -84,13 +87,27 @@
                 </div>
             </div>
 
-            <div class="socialmediaInfo">
-                <label for="instagram">Instagram</label>
-                <input type="text" name="instagram" id="instagram">
-                <label for="twitter">Twitter</label>
-                <input type="text" name="twitter" id="twitter">
-                <label for="linkedin">Linkedin</label>
-                <input type="text" name="linkedin" id="linkedin">
+            <div class="second-grid">
+                <div class="social-media">
+                    <p>Social Media</p>
+                    <div class="instagram">
+                        <label for="instagram"><i class="fa-brands fa-instagram icon"></i></label>
+                        <input type="text" name="instagram" id="instagram" placeholder=" @ ">
+                    </div>
+                    <div class="x-twitter">
+                        <label for="x-twitter"><i class="fa-brands fa-x-twitter icon"></i></label>
+                        <input type="text" name="x-twitter" id="x-twitter" placeholder=" @ ">
+                    </div>
+                    <div class="linkedin">
+                        <label for="linkedin"><i class="fa-brands fa-linkedin icon"></i></label>
+                        <input type="text" name="linkedin" id="linkedin" placeholder=" / ">
+                    </div>
+                </div>
+
+                <div class="addCancelBtn">
+                        <button><i class="fa-solid fa-plus"></i>  Add Contact</button>
+                        <button><i class="fa-solid fa-x"></i>  Cancel</button>
+                </div>
             </div>
         </section>
 

@@ -12,6 +12,17 @@
     background-color: #ecebe9;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.container input {
+    background-color: transparent;
+    height: 30px;
+    padding: 6px;
+    text-align: left;
+    border-radius: 5px;
+    border: 1.5px solid #383838;
 }
 
 .header {
@@ -76,9 +87,10 @@
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "basicInfo" 
     "socialmediaInfo";
+    justify-content: center;
 }
 
-.basicInfo {
+.first-grid {
     grid-area: basicInfo;
     display: flex;
     flex-direction: column;
@@ -86,6 +98,8 @@
     justify-content: center;
     gap: 20px;
     min-width: 550px;
+    font-weight: 700;
+    font-size: 0.9em;
 }
 
 .name {
@@ -96,7 +110,7 @@
 .fullname {
     display: flex;
     flex-direction: column;
-    width: 320px;
+    width: 310px;
     gap: 8px;
 }
 
@@ -110,7 +124,7 @@
 .birthday {
     display: flex;
     flex-direction: column;
-    width: 110px;
+    width: 120px;
     gap: 8px;
 }
 
@@ -203,10 +217,55 @@
 }
 
 
-.socialmediaInfo {
+.second-grid {
     grid-area: socialmediaInfo;
+    width: 590px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: flex-start;
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+.social-media {
     display: flex;
     flex-direction: column;
+    gap: 15px;
+}
+
+.icon {
+    width: 15px;
+}
+
+.social-media input {
+    width: 150px;
+}
+
+.addCancelBtn {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    gap: 20px;
+}
+
+.addCancelBtn button {
+    background-color: #383838;
+    border: 1.5px solid transparent;
+    color: #ecebe9;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-weight: 1.2em;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.addCancelBtn button:hover {
+    background-color: transparent;
+    border-color: #383838;
+    color: #383838;
 }
 
 
