@@ -277,14 +277,24 @@
     justify-content: center;
     color: #383838;
     padding: 20px;
+    font-size: 12px;
 }
 
 .heartImg {
-    width: 18px;
+    width: 13px;
 }
 
 .footer a {
     text-decoration: none;
     color: #383838;
     font-weight: 700;
+}
+
+/* contacts.html */
+
+.contactCard {
+    width: 600px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
 }

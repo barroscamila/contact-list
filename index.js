@@ -1,8 +1,3 @@
-// funcao para apresentar contatos salvos na "API"
-async function showContacts() {
-    
-}
-
 // funcao para salvar novo contato na "API"
 async function saveNewContact(ev) {
     ev.preventDefault()
@@ -20,12 +15,12 @@ async function saveNewContact(ev) {
     const state = document.querySelector('#state').value
     const country = document.querySelector('#country').value
     const instagram = document.querySelector('#instagram').value
-    const x_twitter = document.querySelector('#x-twitter').value
+    const xtwitter = document.querySelector('#xtwitter').value
     const linkedin = document.querySelector('#linkedin').value
 
     const response = await fetch("http://localhost:3000/contacts", {
         method: 'POST',
-        body: JSON.stringify({ fullname, nickname, birthday, number, number2, email, postcode, address, numberAddress, city, state, country, instagram, x_twitter, linkedin }),
+        body: JSON.stringify({ fullname, nickname, birthday, number, number2, email, postcode, address, numberAddress, city, state, country, instagram, xtwitter, linkedin }),
         headers: {
             'Content-Type': 'application/json'
         }
@@ -52,7 +47,7 @@ function reset() {
     document.querySelector('#state').value = ""
     document.querySelector('#country').value = ""
     document.querySelector('#instagram').value = ""
-    document.querySelector('#x-twitter').value = ""
+    document.querySelector('#xtwitter').value = ""
     document.querySelector('#linkedin').value = ""
 }
 
@@ -60,4 +55,3 @@ function reset() {
 
 document.querySelector('form').addEventListener('submit', saveNewContact)
 document.querySelector('#cancelBtn').addEventListener('click', reset)
-
