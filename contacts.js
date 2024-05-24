@@ -16,11 +16,11 @@ function createContactCard(fullname, nickname, birthday, number, number2, email,
     const card = document.createElement('div')
     card.classList = 'contactCard'
     card.innerHTML = `
-    <p><span>${fullname}</span> <span>(${nickname})</span></p>
-    <p>Birthday: <span>${birthday}</span></p>
-    <p>Contact numbers: <span>${number}</span>, <span>${number2}</span></p>
+    <p><span><strong>${fullname}</strong></span> <span>(${nickname})</span></p>
+    <p><strong>Birthday:</strong> <span>${birthday}</span></p>
+    <p><strong>Contact numbers:</strong> <span>${number}</span>, <span>${number2}</span></p>
     <p>E-mail: <span>${email}</span></p>
-    <p>Address:
+    <p><strong>Address:</strong>
         <span>${postcode}</span>, 
         <span>${address}</span>
         <span>${numberAddress}</span>, 
@@ -28,9 +28,9 @@ function createContactCard(fullname, nickname, birthday, number, number2, email,
         <span>${state}</span>, 
         <span>${country}</span>
     </p>
-    <p>Instagram: @<span>${instagram}</span></p>
-    <p>X (twitter): @<span>${xtwitter}</span></p>
-    <p>Linkedin: /<span>${linkedin}</span></p>
+    <p><strong>Instagram:</strong> @<span>${instagram}</span></p>
+    <p><strong>X (twitter):</strong> @<span>${xtwitter}</span></p>
+    <p><strong>Linkedin:</strong> /<span>${linkedin}</span></p>
     `
     contactListContainer.appendChild(card)
 }

@@ -8,7 +8,7 @@
 }
 
 .container {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-color: #ecebe9;
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@
 }
 
 .header {
-    min-height: 40px;
+    min-height: 10vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -65,7 +65,7 @@
     padding: 10px;
     transition: border-bottom 1s;
     cursor: pointer;
-    transition: 0.8s;
+    transition: 0.5s;
 }
 
 .navBtn a {
@@ -78,10 +78,11 @@
     border-top: transparent;
     border-right: transparent;
     border-left: transparent;
+    font-weight: bold;
 }
 
-
 .main-content {
+    min-height: 80vh;
     flex: 1 0 auto;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -100,6 +101,10 @@
     min-width: 550px;
     font-weight: 700;
     font-size: 0.9em;
+}
+
+.first-grid input {
+    background-color: white;
 }
 
 .name {
@@ -235,6 +240,10 @@
     gap: 15px;
 }
 
+.social-media input {
+    background-color: white;
+}
+
 .icon {
     width: 15px;
 }
@@ -263,14 +272,14 @@
 }
 
 .addCancelBtn button:hover {
-    background-color: transparent;
+    background-color: white;
     border-color: #383838;
     color: #383838;
 }
 
 
 .footer {
-    min-height: 40px;
+    min-height: 10vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -292,9 +301,28 @@
 
 /* contacts.html */
 
+.contactListContainer {
+    min-height: 80vh;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
 .contactCard {
-    width: 600px;
+    width: 500px;
+    max-height: 210px;
     padding: 15px;
+    background-color: white;
     border: 1px solid black;
     border-radius: 10px;
+    font-size: 0.9em;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.414);
+    line-height: 1.4em;
+}
+
+.contactCard:hover {
+    cursor: auto;
+    border: 2.5px solid rgba(0, 0, 0, 0.667);
 }
