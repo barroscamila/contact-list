@@ -8,7 +8,6 @@
 }
 
 .container {
-    /* min-height: 100vh; */
     background-color: #ecebe9;
     display: flex;
     flex-direction: column;
@@ -85,7 +84,7 @@
     min-height: 80vh;
     flex: 1 0 auto;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto;
     grid-template-areas: "basicInfo" 
     "socialmediaInfo";
     justify-content: center;
@@ -105,6 +104,8 @@
 
 .first-grid input {
     background-color: white;
+    height: 40px;
+    padding-left: 10px;
 }
 
 .name {
@@ -242,6 +243,8 @@
 
 .social-media input {
     background-color: white;
+    height: 40px;
+    padding-left: 10px;
 }
 
 .icon {
@@ -312,17 +315,21 @@
 
 .contactCard {
     width: 500px;
-    max-height: 210px;
+    max-height: 230px;
     padding: 15px;
     background-color: white;
     border: 1px solid black;
     border-radius: 10px;
     font-size: 0.9em;
     box-shadow: 1px 1px rgba(0, 0, 0, 0.414);
-    line-height: 1.4em;
+    line-height: 1.5em;
 }
 
 .contactCard:hover {
     cursor: auto;
     border: 2.5px solid rgba(0, 0, 0, 0.667);
+}
+
+#contactName {
+    font-size: 1.4em;
 }
